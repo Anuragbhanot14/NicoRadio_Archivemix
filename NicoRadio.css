@@ -16,22 +16,106 @@ body {
     margin-top: 20px;
   }
   .container .play {
-    left: 103px;
+    left: 12%;
     top: 77px;
     width: 195px;
     height: 195px;
     background-image: linear-gradient(to top, #a4d9d5, #c0e18d);
     border-radius: 50%;
   }
+  .container .play_list {
+    margin-left: 54px;
+  }
+  .container .play_list--name {
+    font-family: Euclid Flex bold;
+    font-size: 36px;
+    line-height: 0.04em;
+    margin-top: 58px;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+  }
+  .container .play_round {
+    background: url("img/Group 348.svg");
+    background-repeat: no-repeat;
+    width: 50.65px;
+    height: 50.65px;
+    padding: 10px 0px 0px 19px;
+    margin: 72px 56px 0px;
+  }
+  .container .play_round--img {
+    width: 9.17px;
+    height: 26.8px;
+  }
+  .container .play_track {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-align: center;
+    letter-spacing: 0.08em;
+    background: white;
+    height: 356px;
+    font-size: 12px;
+    width: 30px;
+    line-height: 0.6em;
+  }
+  .container .play_track--text {
+    font-family: Euclid Flex bold;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    line-height: 0.05em;
+    color: #494949;
+    text-align: center;
+    width: 132px;
+    height: 38px;
+  }
+  .container .play--img {
+    text-align: center;
+    top: 30px;
+  }
+  .container .play_nav--left {
+    color: #7e7e7e;
+    font-size: 11px;
+    font-family: Euclid Flex;
+    font-weight: bold;
+  }
+  .container .play_nav--right {
+    color: #b1b1b1;
+    font-size: 11px;
+    font-family: Euclid Flex;
+    font-weight: bold;
+  }
+  .container .archive {
+    margin-top: 45px;
+    text-align: center;
+    right: 70px;
+  }
+  .container .archive--text {
+    font-family: Euclid Flex bold;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: underline;
+    letter-spacing: 0.2em;
+    line-height: 0.8em;
+  }
+  .container .horizontalline--left {
+    border-bottom: 5px solid #7e7e7e;
+    width: 174px;
+  }
+  .container .horizontalline--right {
+    border-bottom: 2px solid #b1b1b1;
+  }
   .container .playinfo {
     background-color: #ffffff;
     border-image: 10px linear-gradient(to top, #a4d9d5, #c0e18d);
     border: 10px;
+    left: 4%;
     width: 376px;
+    top: 39px;
     height: 503px;
   }
   .container .playinfo_footer {
     margin-top: 17px;
+    display: -webkit-inline-box;
+    margin-left: 72px;
   }
   .container .playinfo_cloud--logo {
     width: 36px;
@@ -58,16 +142,15 @@ body {
     height: 13px;
     width: 271px;
     font-size: 13px;
-    font-family: Euclid Flex;
-    margin-top: 29px;
+    font-family: Euclid Flex, Bold;
+    margin-top: 16%;
     color: #131313;
-    font-weight: bold;
   }
   .container .playinfo--header {
     width: 349.76px;
     text-align: center;
     height: 29.55px;
-    margin: 73px 0px 0px 74px;
+    margin: 10% 0px 0px 0%;
     cursor: pointer;
   }
   .container .playinfo_left--text {
