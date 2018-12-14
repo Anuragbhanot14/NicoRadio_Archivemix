@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NicoRadio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="NicoRadio.css">
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <div class="row">
+                <div class="col-md-2 col-lg-2 col-sm-3  radio">
+                    <img src="img/Group 366.svg" alt="Logo" class="radio--logo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12   hidden-xs hidden-sm archive">
+                    <span class="archive--text">ARCHIVE MIX</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <!-- for mobile play -->
+                <div class="play col-md-6 col-sm-6  hidden-md hidden-lg">
+
+                </div>
+                <div class="col-xs-6 play col-sm-6  hidden-xs hidden-sm">
+                    
+                    <div class="row">
+                        <!-- moble PREVIOUS TRACK -->
+                        <div class="col-md-6 play_track col-md-offset-3">
+                            <span class="play_track--text"> PREVIOUS TRACK <br> TRACK NAME</span>
+                        </div>
+                        <!-- end -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-5">
+                            <div class="play_round">
+                                <img src="img/Group 349.svg" alt="img" class="play_round--img">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-11 play_list">
+                            <p class="play_list--name">PLAYLIST NAME</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 play_now col-md-offset-5">
+                            <span class="play_now--track">PLAYING NOW TRACK NAME</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xm-6 playinfo">
+                    <div class="row playinfo--header">
+                        <div class="col-sm-6 col-xm-6 play_nav">
+                            <p class="play_nav--left" id="ourcurator" onclick="test(this.id)">OUR CURATOR</p>
+                            <div class="horizontalline--left"></div>
+                        </div>
+                        <div class="col-sm-6 col-xm-6">
+                            <p class="play_nav--right" id="story" onclick="test(this.id)">STORY</p>
+                            <div class="horizontalline--right"></div>
+                        </div>
+                    </div>
+
+                    <section id="test">
+
+
+                        <div class="row">
+                            <div class="col-sm-12 col-xm-12 play--img">
+                                <img src="img/Curator.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xm-12 playinfo_title">
+                                <p>SANDUNES AKA SANAYA ARDESHIR</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xm-12 playinfo_container">
+                                <p>Archive Mix is simply dummy text of the printing and
+                                    typesetting industry. Mix is simply dummy text of the printing and
+                                    typesetting industry. Archive Mix is simply dummy text of the printing and
+                                    typesetting industry.</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+
+                    <section id="test2" style="display: none">
+
+
+                        <div class="row">
+                            <div class="col-md-4 play--img">
+                                <img src="img/Curator.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-4 playinfo_title">
+                                <p>SANDUNES AKA SANAYA ARDESHIR</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-3 playinfo_container">
+                                <p>A typesetting industry. Archive Mix is simply dummy text of the printing and
+                                    typesetting industry.</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+
+
+
+
+
+                    <div class="row playinfo_footer">
+                        <div class="col-md-1 col-md-offset-5 col-md-offset-5 playinfo_fb">
+                            <img src="img/Group 240.svg" alt="fb" class="playinfo_fb--logo">
+                        </div>
+                        <div class="col-md-1" class="playinfo_insta">
+                            <img src="img/Group 265.svg" alt="img" class="playinfo_insta--logo">
+                        </div>
+                        <div class="col-md-1 playinfo_cloud">
+                            <img src="img/Path 64.svg" alt="img" class="playinfo_cloud--logo">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+
+    </section>
+    </div>
+</body>
+<script language="javascript" type="text/javascript">
+    window.localStorage.setItem("pre", "ourcurator");
+
+    function test(click_id) {
+        click_id = document.getElementById(click_id);
+        nextElement = click_id.nextElementSibling;
+        nextElement.style.border = "2px solid #7e7e7e";
+        nextElement.style.fontWeight = "bold";
+        var Pre = localStorage.getItem("pre");
+        console.log(localStorage.getItem("pre"));
+        Pre_click = document.getElementById(Pre);
+        if (click_id !== Pre_click) {
+
+            Pre_click.nextElementSibling.style.border = "1px solid #b1b1b1";
+            Pre_click.style.fontWeight = " bolder";
+            pragraph = document.getElementById("test");
+            pragraph2 = document.getElementById("test2");
+            if (Pre === "ourcurator") {
+                pragraph.style.display = 'none';
+                pragraph2.style.display = 'block';
+            }
+            else {
+                pragraph.style.display = 'block';
+                pragraph2.style.display = 'none';
+            }
+        }
+
+        return window.localStorage.setItem("pre", click_id.id);
+    }
+</script>
+
+</html>

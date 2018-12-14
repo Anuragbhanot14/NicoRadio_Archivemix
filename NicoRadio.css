@@ -1,0 +1,229 @@
+body {
+  background: url("img/BG_Desktop.jpg") center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .container .radio {
+    text-align: center;
+  }
+  .container .radio--logo {
+    width: 103px;
+    height: 69px;
+    margin-top: 20px;
+  }
+  .container .play {
+    left: 103px;
+    top: 77px;
+    width: 195px;
+    height: 195px;
+    background-image: linear-gradient(to top, #a4d9d5, #c0e18d);
+    border-radius: 50%;
+  }
+  .container .playinfo {
+    background-color: #ffffff;
+    border-image: 10px linear-gradient(to top, #a4d9d5, #c0e18d);
+    border: 10px;
+    width: 376px;
+    height: 503px;
+  }
+  .container .playinfo_footer {
+    margin-top: 17px;
+  }
+  .container .playinfo_cloud--logo {
+    width: 36px;
+    height: 19px;
+  }
+  .container .playinfo_insta--logo {
+    width: 19px;
+    height: 19px;
+  }
+  .container .playinfo_fb--logo {
+    width: 11px;
+    height: 19px;
+  }
+  .container .playinfo_container {
+    line-height: 2em;
+    text-align: center;
+    color: #707070;
+    font-size: 10px;
+    margin-top: 15px;
+    width: 294px;
+    height: 133px;
+  }
+  .container .playinfo_title {
+    height: 13px;
+    width: 271px;
+    font-size: 13px;
+    font-family: Euclid Flex;
+    margin-top: 29px;
+    color: #131313;
+    font-weight: bold;
+  }
+  .container .playinfo--header {
+    width: 349.76px;
+    text-align: center;
+    height: 29.55px;
+    margin: 73px 0px 0px 74px;
+    cursor: pointer;
+  }
+  .container .playinfo_left--text {
+    font-family: Euclid Flex;
+    font-size: 11px;
+    color: #7e7e7e;
+  }
+}
+@media screen and (min-width: 780px) {
+  .container .radio--logo {
+    height: 69.13px;
+    width: 103px;
+    margin-top: 38px;
+  }
+  .container .archive {
+    text-align: right;
+  }
+  .container .archive--text {
+    font-family: Euclid Flex;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: underline;
+    letter-spacing: 0.12em;
+    line-height: 0.18em;
+    font-weight: bold;
+  }
+  .container .play {
+    background-image: linear-gradient(to top, #a4d9d5, #c0e18d);
+    border-radius: 50%;
+    width: 578px;
+    margin-right: -76px;
+    z-index: 1;
+    height: 578px;
+  }
+  .container .play--img {
+    margin: 29px 0px 0px 202px;
+  }
+  .container .play_nav--left {
+    color: #7e7e7e;
+    font-size: 11px;
+    font-family: Euclid Flex;
+    font-weight: bold;
+  }
+  .container .play_nav--right {
+    color: #b1b1b1;
+    font-size: 11px;
+    font-family: Euclid Flex;
+    font-weight: bold;
+  }
+  .container .play_now {
+    margin-top: 54px;
+  }
+  .container .play_now--track {
+    font-family: Euclid Flex;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .container .play_list {
+    margin-left: 74px;
+  }
+  .container .play_list--name {
+    font-family: Euclid Flex;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 0.4em;
+    margin-top: 58px;
+    color: #ffffff;
+    letter-spacing: 0.2em;
+  }
+  .container .play_round {
+    background: url("img/Group 348.svg");
+    background-repeat: no-repeat;
+    width: 105px;
+    height: 105px;
+    padding: 34px 0px 0px 44px;
+    margin: 83px 0px 0px;
+  }
+  .container .play_round--img {
+    width: 13px;
+    height: 38px;
+  }
+  .container .play_track {
+    margin-top: 107px;
+    text-align: center;
+  }
+  .container .play_track--text {
+    font-family: Euclid Flex;
+    font-size: 15px;
+    letter-spacing: 0.25em;
+    line-height: 0.19em;
+    color: #ffffff;
+    text-align: center;
+    width: 132px;
+    height: 38px;
+  }
+  .container .playinfo {
+    background-color: #ffffff;
+    border-image: 10px linear-gradient(to top, #a4d9d5, #c0e18d);
+    border: 10px;
+    border-radius: 50%;
+    width: 560px;
+    height: 560px;
+  }
+  .container .playinfo_footer {
+    margin-top: 17px;
+  }
+  .container .playinfo_cloud--logo {
+    width: 36px;
+    height: 19px;
+  }
+  .container .playinfo_insta--logo {
+    width: 19px;
+    height: 19px;
+  }
+  .container .playinfo_fb--logo {
+    width: 11px;
+    height: 19px;
+  }
+  .container .playinfo_container {
+    line-height: 2em;
+    text-align: center;
+    color: #707070;
+    font-size: 10px;
+    margin-top: 15px;
+    width: 294px;
+    height: 133px;
+  }
+  .container .playinfo_title {
+    height: 13px;
+    width: 271px;
+    font-size: 13px;
+    font-family: Euclid Flex;
+    margin-top: 29px;
+    color: #131313;
+    font-weight: bold;
+  }
+  .container .playinfo--header {
+    width: 349.76px;
+    text-align: center;
+    height: 29.55px;
+    margin: 73px 0px 0px 74px;
+    cursor: pointer;
+  }
+  .container .playinfo_left--text {
+    font-family: Euclid Flex;
+    font-size: 11px;
+    color: #7e7e7e;
+  }
+  .container .horizontalline--left {
+    border-bottom: 5px solid #7e7e7e;
+    width: 174px;
+  }
+  .container .horizontalline--right {
+    border-bottom: 2px solid #b1b1b1;
+  }
+}
+
+/*# sourceMappingURL=NicoRadio.css.map */
