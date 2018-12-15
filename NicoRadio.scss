@@ -1,13 +1,16 @@
-body {
-  background: url("img/BG_Desktop.jpg") center center fixed;
+
+
+
+  
+  @media screen and (max-width: 768px) {
+    body {
+  background: url("img/BG_Mobile.jpg") center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
-.container {
-  @media screen and (max-width: 768px) {
+.container{
     .radio {
       text-align: center;
       &--logo {
@@ -16,6 +19,16 @@ body {
         margin-top: 20px;
       }
     }
+
+        .left{
+              left: 0%;
+        } 
+
+        .right{
+              left: 27%;
+        }
+
+
     .play {
       left: 12%;
 
@@ -51,6 +64,8 @@ body {
       &_track {
         writing-mode: vertical-rl;
         text-orientation: mixed;
+            transform: rotate(180deg);
+
         text-align: center;
         letter-spacing: 0.08em;
         background: white;
@@ -58,6 +73,7 @@ body {
         font-size: 12px;
         width: 30px;
         line-height: 0.6em;
+
 
         &--text {
           font-family: Euclid Flex bold;
@@ -78,21 +94,19 @@ body {
         &--left {
           color: #7e7e7e;
           font-size: 11px;
-          font-family: Euclid Flex;
-          font-weight: bold;
+          font-family: Euclid Flex bold;
         }
         &--right {
           color: #b1b1b1;
           font-size: 11px;
-          font-family: Euclid Flex;
-          font-weight: bold;
+          font-family: Euclid Flex bold;
         }
       }
     }
     .archive {
-             margin-top: 45px;
-    text-align: center;
-    right: 70px;
+      margin-top: 45px;
+      text-align: center;
+      right: 70px;
       &--text {
         font-family: Euclid Flex bold;
         color: #ffffff;
@@ -120,12 +134,12 @@ body {
       border: 10px;
       left: 4%;
       width: 376px;
-          top: 39px;
+      top: 39px;
       height: 503px;
       &_footer {
         margin-top: 17px;
-            display: -webkit-inline-box;
-                margin-left: 72px;
+        display: -webkit-inline-box;
+        margin-left: 72px;
       }
       &_cloud {
         &--logo {
@@ -172,17 +186,25 @@ body {
 
       &_left {
         &--text {
-          font-family: Euclid Flex;
+          font-family: Euclid Flex bold;
           font-size: 11px;
           color: #7e7e7e;
         }
       }
     }
   }
-
+  }
   // for desktop screen
 
   @media screen and (min-width: 780px) {
+    body {
+  background: url("img/BG_Desktop.jpg") center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container{
     .radio {
       &--logo {
         height: 69.13px;
@@ -193,10 +215,10 @@ body {
     .archive {
       text-align: right;
       &--text {
-        font-family: Euclid Flex;
+        font-family: Euclid Flex bold;
         color: #ffffff;
         font-size: 14px;
-        text-decoration: underline;
+        
         letter-spacing: 0.12em;
         line-height: 0.18em;
         font-weight: bold;
@@ -207,10 +229,11 @@ body {
       background-image: linear-gradient(to top, #a4d9d5, #c0e18d);
       border-radius: 50%;
       width: 578px;
-      margin-right: -76px;
+      margin-right: -11%;
       z-index: 1;
+      margin-left: 47px;
       height: 578px;
-
+      margin-top: -7%;
       &--img {
         margin: 29px 0px 0px 202px;
       }
@@ -218,8 +241,7 @@ body {
         &--left {
           color: #7e7e7e;
           font-size: 11px;
-          font-family: Euclid Flex;
-          font-weight: bold;
+          font-family: Euclid Flex bold;
         }
         &--right {
           color: #b1b1b1;
@@ -231,22 +253,23 @@ body {
       &_now {
         margin-top: 54px;
         &--track {
-          font-family: Euclid Flex;
+          font-family: Euclid Flex bold;
           font-size: 15px;
-          font-weight: bold;
+
           color: #ffffff;
         }
       }
       &_list {
         margin-left: 74px;
         &--name {
-          font-family: Euclid Flex;
+          font-family: Euclid Flex bold;
           font-size: 36px;
-          font-weight: bold;
+
           line-height: 0.4em;
           margin-top: 58px;
           color: #ffffff;
-          letter-spacing: 0.2em;
+          letter-spacing: 0.06em;
+          margin-left: 13%;
         }
       }
       &_round {
@@ -254,22 +277,22 @@ body {
         background-repeat: no-repeat;
         width: 105px;
         height: 105px;
-        padding: 34px 0px 0px 44px;
-        margin: 83px 0px 0px;
+        padding: 32px 0px 0px 44px;
+        margin: 83px -15px 0px;
         &--img {
           width: 13px;
           height: 38px;
         }
       }
       &_track {
-        margin-top: 107px;
+        margin-top: 116px;
 
         text-align: center;
         &--text {
-          font-family: Euclid Flex;
+          font-family: Euclid Flex bold;
           font-size: 15px;
-          letter-spacing: 0.25em;
-          line-height: 0.19em;
+          letter-spacing: 0.06em;
+          line-height: 0.07em;
           color: #ffffff;
           text-align: center;
           width: 132px;
@@ -281,11 +304,21 @@ body {
     .playinfo {
       background-color: #ffffff;
 
-      border-image: 10px linear-gradient(to top, #a4d9d5, #c0e18d);
+      
       border: 10px;
       border-radius: 50%;
       width: 560px;
+      margin-top: -6%;
       height: 560px;
+      &_border{
+        background-image: linear-gradient(to top, #a4d9d5, #c0e18d);
+    border: 10px;
+    border-radius: 50%;
+    width: 578px;
+    margin-top: -80px;
+    height: 578px;
+    margin-left: 488px;
+      }
       &_footer {
         margin-top: 17px;
       }
@@ -335,7 +368,7 @@ body {
 
       &_left {
         &--text {
-          font-family: Euclid Flex;
+          font-family: Euclid Flex bold;
           font-size: 11px;
           color: #7e7e7e;
         }
@@ -351,4 +384,7 @@ body {
       }
     }
   }
+
 }
+
+

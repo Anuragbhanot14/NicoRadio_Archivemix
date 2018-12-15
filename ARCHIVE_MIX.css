@@ -7,13 +7,18 @@ body {
 }
 
 @media screen and (max-width: 780px) {
-  .container .radio {
+  .container .header_left {
     margin: 0px;
     top: 34px;
     text-align: center;
   }
-  .container .radio_border {
-    width: 391.85px;
+  .container .header_left--logo {
+    width: 103.81px;
+    height: 69px;
+    margin-top: 7px;
+  }
+  .container .header_border {
+    width: 114%;
     height: 686.04px;
     margin-left: -4px;
     margin-top: 59px;
@@ -22,23 +27,18 @@ body {
     border-image-slice: 1;
     background-color: #ffffff;
   }
-  .container .radio_back {
+  .container .header_right {
     height: 18px;
   }
-  .container .radio_back--text {
+  .container .header_right--text {
     font-family: Euclid Flex;
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 0.12em;
     color: #ffffff;
     text-decoration: underline;
-    margin-left: 87px;
+    text-align: center;
     margin-top: 35px;
-  }
-  .container .radio--img {
-    width: 103.81px;
-    height: 69px;
-    margin-top: 7px;
   }
   .container .footer {
     margin-top: 20px;
@@ -72,18 +72,17 @@ body {
   }
 }
 @media screen and (min-width: 780px) {
-  .container .radio {
+  .container .header_left {
     margin: 0px;
-    top: 34px;
+    top: 40px;
   }
-  .container .radio--img {
+  .container .header_left--logo {
     width: 103.81px;
     height: 69.13px;
     margin-left: -47px;
   }
-  .container .radio_border {
+  .container .header_border {
     margin-left: 87px;
-    margin-top: -21px;
     background-color: #ffffff;
     width: 880px;
     height: 524px;
@@ -91,16 +90,32 @@ body {
     border-image: linear-gradient(to top, #a4d9d5, #c0e18d);
     border-image-slice: 1;
   }
-  .container .radio_back {
+  .container .header_right {
     height: 18px;
+    left: 79%;
+    top: 92px;
   }
-  .container .radio_back--text {
+  .container .header_right--text {
     font-family: Euclid Flex;
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 0.12em;
     color: #ffffff;
     text-decoration: underline;
+  }
+  .container .play {
+    top: 14px;
+    left: 20px;
+  }
+  .container .play_img {
+    width: 15px;
+    height: 19px;
+  }
+  .container .archive {
+    color: #7e7e7e;
+    font-family: Euclid Flex, Bold;
+    letter-spacing: 0.1em;
+    line-height: 0.7em;
   }
   .container .archive_cloud--img {
     width: 46px;
@@ -111,11 +126,12 @@ body {
     height: 12.86;
   }
   .container .archive_follow--text {
+    margin-top: 26px;
     color: #8c8c8c;
     font-family: Euclid Flex, Bold;
     height: 14px;
-    letter-spacing: 0.1em;
-    line-height: 0.14em;
+    letter-spacing: 0.01em;
+    line-height: 0.09em;
     font-size: 11px;
   }
   .container .archive_contain--text {
@@ -124,6 +140,7 @@ body {
     font-family: Euclid Flex, Light;
     font-size: 10px;
     line-height: 2.1em;
+    letter-spacing: 0em;
   }
   .container .archive--text {
     height: 27px;
@@ -134,31 +151,25 @@ body {
     font-weight: bold;
   }
   .container .list {
+    margin-top: 89px;
     height: 350px;
-    overflow-y: scroll;
     width: 383px;
-    /* Track */
-    /* Handle */
-    /* Handle on hover */
-  }
-  .container .list ::-webkit-scrollbar {
-    width: 100px;
-  }
-  .container .list ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  .container .list ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  .container .list ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    right: 35px;
   }
   .container .list_logo {
-    width: 327px;
+    width: 65px;
+    height: 65px;
   }
   .container .section_text {
-    top: 75px;
+    top: 169px;
     margin: 0px;
+  }
+  .container .songs {
+    width: 212px;
+    height: 14px;
+    font-size: 10px;
+    top: 18px;
+    font-family: Euclid Flex, Medium;
   }
 }
 
