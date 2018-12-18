@@ -10,102 +10,112 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="NicoRadio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <section>
-            <div class="row">
-                <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12  radio">
-                    <img src="img/Group 366.svg" alt="Logo" class="radio--logo">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-lg-3 col-lg-offset-9   hidden-xs hidden-sm archive">
-                    <span class="archive--text">ARCHIVE MIX</span>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="row">
+                <section class="radio_head">  
+                    <!-- ---radio logo--- -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-md-offset-1 col-xs-12 col-sm-12  radio">
+                            <img src="img/Group 366.svg" alt="Logo" class="radio--logo">
+                        </div>
+                    </div>
+                    <!-- end -->
+                    <!-- archive mix text desktop -->
+                    <div class="row">
+                        <div class="col-md-6  col-md-offset-7 col-lg-3  col-lg-offset-9   hidden-xs hidden-sm archive">
+                            <span class="archive--text">ARCHIVE MIX</span>
+                        </div>
+                    </div>
+                    <!-- end -->
+                </section>
+                
+        <section class="play_head">
+            <div cl ass="row">
                 <!-- for mobile play -->
                 <div class="row">
-                    <div class="col-xs-2 col-xs-offset-1  hidden-md hidden-lg play_track left ">
+                    <div class="col-xs-1 col-xs-offset-1 col-sm-1 col-sm-offset-1  hidden-md hidden-lg play_track left  ">
                         <span class="play_track--text"> PREVIOUS TRACK <b>TRACK NAME </b></span>
                     </div>
-                    <div class="play col-xs-6 col-sm-6 col-sm-offset-4  hidden-md hidden-lg">
-                    <div class="play_round">
-                        <img src="img/Group 349.svg" alt="img" class="play_round--img">
+                    <div class="play col-xs-6 col-sm-6 col-sm-offset-1  hidden-md hidden-lg">
+                        <div class="play_round">
+                            <img src="img/Group 349.svg" alt="img" class="play_round--img">
+                        </div>
                     </div>
-                    </div>
-                    <div class="col-xs-2 hidden-md hidden-lg play_track right">
-                            <span class="play_now--track">PLAYING NOW <b> TRACK NAME </b></span>
+                    <div class="col-xs-1 col-sm-1 col-sm-offset-1 hidden-md hidden-lg play_track right">
+                        <span class="play_now--track">PLAYING NOW <b> TRACK NAME </b></span>
                     </div>
                 </div>
-                    <!-- mobile play_list name -->
-                        <div class="row">
-                            <div class="col-sm-12 col-xs-12  hidden-md hidden-lg play_list">
-                                <p class="play_list--name">PLAYLIST NAME</p>
-                            </div>
-                        </div>
-                        <!-- end -->
-                        <!-- mobile ARCHIVE MIX -->
-                        <div class="row">
-                            <div class="col-sm-12 col-xs-12  hidden-md hidden-lg play_list archive">
-                                <span class="archive--text">ARCHIVE MIX</span>
-                            </div>
-                        </div>
-                        <!-- end -->
+                <!-- mobile play_list name -->
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-1 col-xs-12  hidden-md hidden-lg play_list">
+                        <p class="play_list--name">PLAYLIST NAME</p>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- mobile ARCHIVE MIX -->
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12  hidden-md hidden-lg archive">
+                        <span class="archive--text">ARCHIVE MIX</span>
+                    </div>
+                </div>
+                <!-- end -->
+
+
+
                 <div class="col-md-6 play col-lg-6  hidden-xs hidden-sm">
-                    
+
                     <div class="row">
 
                         <!-- desktop PREVIOUS TRACK -->
-                        <div class="col-md-6 play_track col-md-offset-3">
+                        <div class="col-md-6 col-lg-6 play_track col-md-offset-3">
                             <span class="play_track--text"> PREVIOUS TRACK <br> <b> TRACK NAME </b></span>
                         </div>
                         <!-- end -->
-                 
+
                     </div>
-                    
+
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-5">
+                        <div class="col-lg-6 col-md-6 col-md-offset-5">
                             <div class="play_round">
                                 <img src="img/Group 349.svg" alt="img" class="play_round--img">
                             </div>
 
                         </div>
                     </div>
-            
+
                     <div class="row">
-                        <div class="col-md-11 play_list">
+                        <div class="col-md-11 col-lg-11 play_list">
                             <p class="play_list--name">PLAYLIST NAME</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 play_now col-md-offset-5">
-                            <span class="play_now--track">PLAYING NOW TRACK NAME</span>
+                        <div class="col-md-12 col-lg-3 play_now col-md-offset-5">
+                            <span class="play_now--track">PLAYING NOW <br> <b> TRACK NAME </b></span>
                         </div>
                     </div>
                 </div>
-               <!-- play info desktop -->
-                <div class="col-sm-6 col-xs-6 playinfo">
+                <!-- play info moblie -->
+                <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-md-6  col-xs-12 playinfo">
+
                     <div class="row playinfo--header">
-                        <div class="col-sm-6 col-xs-6 play_nav">
+                        <div class="col-sm-5 col-xs-6 col-md-6 col-lg-6  play_nav">
                             <p class="play_nav--left" id="ourcurator" onclick="test(this.id)">OUR CURATOR</p>
                             <div class="horizontalline--left"></div>
                         </div>
-                        <div class="col-sm-6 col-xs-6">
+                        <div class="col-sm-6 col-xs-6 col-md-6 col-lg-6">
                             <p class="play_nav--right" id="story" onclick="test(this.id)">STORY</p>
                             <div class="horizontalline--right"></div>
                         </div>
                     </div>
 
-                    <section id="test">
+                    <section id="click_hide">
 
 
                         <div class="row">
-                            <div class="col-sm-12 col-xs-12 play--img">
+                            <div class="col-sm-12 col-xs-12 col-lg-2 col-md-12 play--img">
                                 <img src="img/Curator.jpg" alt="img">
                             </div>
                         </div>
@@ -115,7 +125,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12 col-xs-12 col-sm-offset-1 col-xs-offset-1 playinfo_container col-md-offset-3 col-lg-offset-3 ">
+                            <div class="col-sm-10 col-md-12 col-lg-12 col-xs-10 col-sm-offset-1 col-xs-offset-1 playinfo_container col-md-offset-3 col-lg-offset-3 ">
                                 <p>Archive Mix is simply dummy text of the printing and
                                     typesetting industry. Mix is simply dummy text of the printing and
                                     typesetting industry. Archive Mix is simply dummy text of the printing and
@@ -128,25 +138,27 @@
 
 
 
-                    <section id="test2" style="display: none">
+                    <section id="click_show" style="display: none">
 
 
-                        <div class="row">
-                            <div class="col-md-4 play--img">
-                                <img src="img/Curator.jpg" alt="img">
-                            </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-11 col-lg-2 col-md-2 play--img">
+                            <img src="img/Curator.jpg" alt="img">
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4 playinfo_title">
-                                <p>SANDUNES AKA SANAYA ARDESHIR</p>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 col-sm-offset-2 col-xs-offset-2 col-xs-12 col-md-offset-4 col-lg-offset-4 playinfo_title">
+                            <p>SANDUNES AKA SANAYA ARDESHIR</p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-5 col-md-offset-3 playinfo_container">
-                                <p>A typesetting industry. Archive Mix is simply dummy text of the printing and
-                                    typesetting industry.</p>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-10 col-md-12 col-lg-12 col-xs-10 col-sm-offset-1 col-xs-offset-1 playinfo_container col-md-offset-3 col-lg-offset-3 ">
+                            <p> Mix is simply dummy text of the printing and
+                                typesetting industry. Mix is simply dummy text of the printing and
+                                typesetting industry. Archive Mix is simply dummy text of the printing and
+                                typesetting industry.</p>
                         </div>
+                    </div>
                     </section>
 
 
@@ -158,13 +170,13 @@
 
 
                     <div class="row playinfo_footer">
-                        <div class="col-md-1 col-sm-2 col-xm-2 col-xm-offset-5  col-md-offset-5  col-md-offset-5 playinfo_fb">
+                        <div class="col-md-1 col-lg-1 col-sm-2 col-xm-2 col-xm-offset-5  col-sm-offset-5  col-md-offset-4 playinfo_fb">
                             <img src="img/Group 240.svg" alt="fb" class="playinfo_fb--logo">
                         </div>
-                        <div class="col-md-1 col-sm-2 col-xm-2 col-md-1" class="playinfo_insta">
+                        <div class="col-md-1 col-lg-1 col-sm-2 col-xm-2 col-md-1" class="playinfo_insta">
                             <img src="img/Group 265.svg" alt="img" class="playinfo_insta--logo">
                         </div>
-                        <div class="col-md-1 col-sm-2 col-xm-2 col-md-1 playinfo_cloud">
+                        <div class="col-md-1 col-lg-1 col-sm-2 col-xm-2 col-md-1 playinfo_cloud">
                             <img src="img/Path 64.svg" alt="img" class="playinfo_cloud--logo">
                         </div>
                     </div>
@@ -175,28 +187,29 @@
                 <div class="playinfo_border hidden-xs hidden-sm"></div>
             </div>
             <!-- end -->
+        </section>
     </div>
 
-    </section>
-    </div>
+
 </body>
 <script language="javascript" type="text/javascript">
     window.localStorage.setItem("pre", "ourcurator");
 
     function test(click_id) {
-        click_id = document.getElementById(click_id);
-        nextElement = click_id.nextElementSibling;
+       var click = document.getElementById(click_id);
+        nextElement = click.nextElementSibling;
         nextElement.style.border = "2px solid #7e7e7e";
-        nextElement.style.fontWeight = "bold";
+        nextElement.style.fontFamily = "Euclid Flex";
+        
         var Pre = localStorage.getItem("pre");
         console.log(localStorage.getItem("pre"));
         Pre_click = document.getElementById(Pre);
-        if (click_id !== Pre_click) {
+        if (click !== Pre_click) {
 
             Pre_click.nextElementSibling.style.border = "1px solid #b1b1b1";
             Pre_click.style.fontWeight = " bolder";
-            pragraph = document.getElementById("test");
-            pragraph2 = document.getElementById("test2");
+            pragraph = document.getElementById("click_hide");
+            pragraph2 = document.getElementById("click_show");
             if (Pre === "ourcurator") {
                 pragraph.style.display = 'none';
                 pragraph2.style.display = 'block';
@@ -207,8 +220,28 @@
             }
         }
 
-        return window.localStorage.setItem("pre", click_id.id);
+        return window.localStorage.setItem("pre", click.id);
+
     }
+
+   
+
+    $(document).ready(function () {
+        var urls = ['img/BG_Desktop.jpg', 'img/BG_Desktop2.jpg', 'img/BG_Desktop3.jpg', 'img/BG_Desktop4.jpg','img/BG_Desktop5.jpg'];
+
+        var cout = 1;
+        $('body').css('background-image', 'url("' + urls[0] + '")');
+        setInterval(function () {
+            $('body').css('background-image', 'url("' + urls[cout] + '")');
+            cout == urls.length - 1 ? cout = 0 : cout++;
+        }, 5000);
+
+    });
+
+
+
+
+
 </script>
 
 </html>

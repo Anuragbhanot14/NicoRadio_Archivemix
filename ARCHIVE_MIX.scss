@@ -4,6 +4,26 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+
+/* width */
+::-webkit-scrollbar {
+ width: 10px;
+ height: 139.7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: #E5E5E5; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #f1f1f1; 
+}
+
+
+
 }
 
 .container {
@@ -76,12 +96,28 @@ body {
         top: 75px;
         margin: 0px;
         left: 41px;
+
+      /* width */
+      ::-webkit-scrollbar {
+      width: 12px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+      background: #E5E5E5; 
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+      background: #f1f1f1; 
+      }
+        
       }
     }
     .list {
       height: 350px;
       overflow-y: scroll;
-      width: 383px;
+      width: 372px;
       top: 34px;
       left: 18px;
     }
@@ -139,21 +175,24 @@ body {
       font-family: Euclid Flex, Bold;
       letter-spacing: 0.1em;
       line-height: 0.7em;
+          margin-top: -27px;
       &_cloud {
         &--img {
           width: 46px;
           height: 26px;
+          margin-top: -8px;
         }
       }
       &_mixcloud {
         &--img {
           width: 86.18px;
           height: 12.86;
+          margin-top: -8px;
         }
       }
       &_follow {
         &--text {
-          margin-top: 26px;
+          margin-top: 3px;
           color: #8c8c8c;
           font-family: Euclid Flex, Bold;
           height: 14px;
@@ -183,12 +222,12 @@ body {
     }
 
     .list {
-      margin-top: 89px;
+      margin-top: 53px;
       height: 350px;
 
       width: 383px;
       right: 35px;
-
+      overflow: auto;
       &_logo {
         width: 65px;
         height: 65px;
