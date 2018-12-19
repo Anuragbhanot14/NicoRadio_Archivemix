@@ -1,7 +1,9 @@
 
 
-.play_round:hover{
-  background: unset;
+.play_round:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
 // for mobile screen width < 768px
 @media screen and (max-width: 768px) {
@@ -68,7 +70,7 @@
         }
       }
       &_round {
-        background: url("img/Group 348.svg");
+        background: url("../images/nico-radio/Group 348.svg");
         background-repeat: no-repeat;
         width: 50.65px;
         height: 50.65px;
@@ -336,18 +338,19 @@
           color: #ffffff;
           letter-spacing: 0.06em;
           margin-left: 13%;
-        }
+       }
+
       }
       &_round {
         @media screen and (min-width: 1024px) and (max-width: 1200px) {
-          background: url("img/Group 348.svg");
+          background: url("../images/nico-radio/Group 348.svg");
           background-repeat: no-repeat;
           width: 105px;
           height: 105px;
           padding: 32px 0px 0px 44px;
           margin: 72px -18px 0px;
         }
-        background: url("img/Group 348.svg");
+        background: url("../images/nico-radio/Group 348.svg");
         background-repeat: no-repeat;
         width: 105px;
         height: 105px;

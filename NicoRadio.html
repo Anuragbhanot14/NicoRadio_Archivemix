@@ -19,10 +19,11 @@
                     <!-- ---radio logo--- -->
                     <div class="row">
                         <div class="col-md-12 col-lg-12 col-md-offset-1 col-xs-12 col-sm-12  radio">
-                            <img src="img/Group 366.svg" alt="Logo" class="radio--logo">
+                            <img src="../images/nico-radio/Group 366.svg" alt="Logo" class="radio--logo">
                         </div>
                     </div>
                     <!-- end -->
+
                     <!-- archive mix text desktop -->
                     <div class="row">
                         <div class="col-md-6  col-md-offset-7 col-lg-3  col-lg-offset-9   hidden-xs hidden-sm archive">
@@ -41,7 +42,7 @@
                     </div>
                     <div class="play col-xs-6 col-sm-6 col-sm-offset-1  hidden-md hidden-lg">
                         <div class="play_round" id="play_img_mob" onclick="play(this.id)">
-                            <img src="img/Path 108.svg" alt="img" class="play_round--img">
+                            <img src="../images/nico-radio/Path 108.svg" alt="img" class="play_round--img">
 
                         </div>
                     </div>
@@ -81,7 +82,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-md-offset-5">
                             <div class="play_round" id="play_img" onclick="play(this.id)">
-                                <img src="img/Path 108.svg" alt="img"  class="play_round--img">
+                                <img src="../images/nico-radio/Path 108.svg" alt="img"  class="play_round--img">
                                 
                             </div>
 
@@ -173,13 +174,13 @@
 
                     <div class="row playinfo_footer">
                         <div class="col-md-1 col-lg-1 col-sm-2 col-xm-2 col-xm-offset-5  col-sm-offset-5  col-md-offset-4 playinfo_fb">
-                            <img src="img/Group 240.svg" alt="fb" class="playinfo_fb--logo">
+                            <img src="../images/nico-radio/Group 240.svg" alt="fb" class="playinfo_fb--logo">
                         </div>
                         <div class="col-md-1 col-lg-1 col-sm-2 col-xm-2 col-md-1" class="playinfo_insta">
-                            <img src="img/Group 265.svg" alt="img" class="playinfo_insta--logo">
+                            <img src="../images/nico-radio/Group 265.svg" alt="img" class="playinfo_insta--logo">
                         </div>
                         <div class="col-md-1 col-lg-1 col-sm-2 col-xm-2 col-md-1 playinfo_cloud">
-                            <img src="img/Path 64.svg" alt="img" class="playinfo_cloud--logo">
+                            <img src="../images/nico-radio/Path 64.svg" alt="img" class="playinfo_cloud--logo">
                         </div>
                     </div>
 
@@ -254,11 +255,11 @@
 
 
 
-            if(play_id.children[0].attributes.src.value === "img/Path 108.svg") {
-                play_id.children[0].setAttribute("src","img/Group 349.svg");
+            if(play_id.children[0].attributes.src.value === "../images/nico-radio/Path 108.svg") {
+                play_id.children[0].setAttribute("src","../images/nico-radio/Group 349.svg");
             }
             else{
-            play_id.children[0].setAttribute("src", "img/Path 108.svg");
+            play_id.children[0].setAttribute("src", "../images/nico-radio/Path 108.svg");
             this.pause();
             }
 
@@ -281,7 +282,8 @@
         function fetchNowPlaying() {
           fetch('https://stream.kollekt.fm/channel/nicobar/playing.json')
             .then(resp => resp.json())
-            .then(displayNowPlaying);
+            .then(displayNowPlaying)
+            .catch( error => ( console.log('error',error)) );
         }
 
         fetchNowPlaying();
