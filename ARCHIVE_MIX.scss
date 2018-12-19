@@ -1,5 +1,5 @@
 body {
-  background: url("img/BG_Desktop.jpg") center center fixed;
+  background: url("https://durornjsc0mci.cloudfront.net/media/uploads/froala_editor/images/1545197884BG_Desktop.jpg") center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -55,8 +55,8 @@ body {
         height: 18px;
 
         &--text {
-          font-family: Euclid Flex;
-          font-weight: bold;
+          font-family: EuclidFlexbold;
+          
           font-size: 14px;
           letter-spacing: 0.12em;
           color: #ffffff;
@@ -68,6 +68,14 @@ body {
       }
     }
 
+    .play {
+      top: 14px;
+      
+      &_img {
+        width: 15px;
+        height: 19px;
+      }
+    }
     .footer {
       margin-top: 20px;
 
@@ -152,8 +160,8 @@ body {
         left: 79%;
         top: 92px;
         &--text {
-          font-family: Euclid Flex;
-          font-weight: bold;
+          font-family: EuclidFlexbold;
+          
           font-size: 14px;
           letter-spacing: 0.12em;
           color: #ffffff;
@@ -172,7 +180,7 @@ body {
     }
     .archive {
       color: #7e7e7e;
-      font-family: Euclid Flex, Bold;
+      font-family: EuclidFlexbold;
       letter-spacing: 0.1em;
       line-height: 0.7em;
           margin-top: -27px;
@@ -194,7 +202,7 @@ body {
         &--text {
           margin-top: 3px;
           color: #8c8c8c;
-          font-family: Euclid Flex, Bold;
+          font-family: EuclidFlexbold;
           height: 14px;
           letter-spacing: 0.01em;
           line-height: 0.09em;
@@ -205,7 +213,7 @@ body {
         &--text {
           width: 277px;
           height: 63px;
-          font-family: Euclid Flex, Light;
+          font-family: EuclidFlexLight;
           font-size: 10px;
           line-height: 2.1em;
           letter-spacing: 0em;
@@ -213,7 +221,7 @@ body {
       }
       &--text {
         height: 27px;
-        font-family: Euclid Flex;
+        font-family: EuclidFlex;
         font-size: 21px;
         letter-spacing: 0.1em;
         color: #131313;
@@ -245,7 +253,7 @@ body {
       font-size: 10px;
       top: 18px;
 
-      font-family: Euclid Flex, Medium;
+      font-family: EuclidFlexMedium;
     }
   }
 }

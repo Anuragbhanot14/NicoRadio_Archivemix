@@ -40,8 +40,9 @@
                         <span class="play_track--text"> PREVIOUS TRACK <b>TRACK NAME </b></span>
                     </div>
                     <div class="play col-xs-6 col-sm-6 col-sm-offset-1  hidden-md hidden-lg">
-                        <div class="play_round">
-                            <img src="img/Group 349.svg" alt="img" class="play_round--img">
+                        <div class="play_round" id="play_img_mob" onclick="play(this.id)">
+                            <img src="img/Path 108.svg" alt="img" class="play_round--img">
+
                         </div>
                     </div>
                     <div class="col-xs-1 col-sm-1 col-sm-offset-1 hidden-md hidden-lg play_track right">
@@ -71,7 +72,7 @@
 
                         <!-- desktop PREVIOUS TRACK -->
                         <div class="col-md-6 col-lg-6 play_track col-md-offset-3">
-                            <span class="play_track--text"> PREVIOUS TRACK <br> <b> TRACK NAME </b></span>
+                            <span class="play_track--text"> PREVIOUS TRACK <br> <b id="previous_track"> TRACK NAME </b></span>
                         </div>
                         <!-- end -->
 
@@ -79,8 +80,9 @@
 
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-md-offset-5">
-                            <div class="play_round">
-                                <img src="img/Group 349.svg" alt="img" class="play_round--img">
+                            <div class="play_round" id="play_img" onclick="play(this.id)">
+                                <img src="img/Path 108.svg" alt="img"  class="play_round--img">
+                                
                             </div>
 
                         </div>
@@ -93,12 +95,12 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 col-lg-3 play_now col-md-offset-5">
-                            <span class="play_now--track">PLAYING NOW <br> <b> TRACK NAME </b></span>
+                            <span class="play_now--track">PLAYING NOW <br> <b id="track_name"> TRACK NAME </b></span>
                         </div>
                     </div>
                 </div>
                 <!-- play info moblie -->
-                <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-md-6  col-xs-12 playinfo">
+                <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-md-6  col-xs-offset-1  col-xs-11 playinfo">
 
                     <div class="row playinfo--header">
                         <div class="col-sm-5 col-xs-6 col-md-6 col-lg-6  play_nav">
@@ -116,7 +118,7 @@
 
                         <div class="row">
                             <div class="col-sm-12 col-xs-12 col-lg-2 col-md-12 play--img">
-                                <img src="img/Curator.jpg" alt="img">
+                                <img src="https://durornjsc0mci.cloudfront.net/media/uploads/froala_editor/images/1545198480Curator.jpg" alt="img">
                             </div>
                         </div>
                         <div class="row">
@@ -143,7 +145,7 @@
 
                     <div class="row">
                         <div class="col-sm-12 col-xs-11 col-lg-2 col-md-2 play--img">
-                            <img src="img/Curator.jpg" alt="img">
+                            <img src="https://durornjsc0mci.cloudfront.net/media/uploads/froala_editor/images/1545198480Curator.jpg" alt="img">
                         </div>
                     </div>
                     <div class="row">
@@ -227,7 +229,7 @@
    
 
     $(document).ready(function () {
-        var urls = ['img/BG_Desktop.jpg', 'img/BG_Desktop2.jpg', 'img/BG_Desktop3.jpg', 'img/BG_Desktop4.jpg','img/BG_Desktop5.jpg'];
+        var urls = ['https://durornjsc0mci.cloudfront.net/media/uploads/froala_editor/images/1545197884BG_Desktop.jpg', 'https://durornjsc0mci.cloudfront.net/media/uploads/froala_editor/images/1545198117BG_Desktop2.jpg', 'https://durornjsc0mci.cloudfront.net/media/uploads/froala_editor/images/1545198271BG_Desktop3.jpg', 'https://durornjsc0mci.cloudfront.net/media/uploads/froala_editor/images/1545198327BG_Desktop4.jpg','img/BG_Desktop5.jpg'];
 
         var cout = 1;
         $('body').css('background-image', 'url("' + urls[0] + '")');
@@ -238,7 +240,52 @@
 
     });
 
+  var brandchannel = new Audio('https://stream.kollekt.fm/nicobar');
 
+        function play(event) {
+          let play_id;
+          let img_id;
+          brandchannel.play();
+          play_id =document.getElementById(event);
+
+         console.log(play_id.children[0].attributes.src);
+            
+
+
+
+
+            if(play_id.children[0].attributes.src.value === "img/Path 108.svg") {
+                play_id.children[0].setAttribute("src","img/Group 349.svg");
+            }
+            else{
+            play_id.children[0].setAttribute("src", "img/Path 108.svg");
+            this.pause();
+            }
+
+            
+
+
+
+        }
+
+        function pause() {
+          brandchannel.pause();
+        }
+
+        function displayNowPlaying(playing) {
+          console.log(playing);
+          document.getElementById('track_name').innerHTML =  playing.current.track;
+          
+        }
+
+        function fetchNowPlaying() {
+          fetch('https://stream.kollekt.fm/channel/nicobar/playing.json')
+            .then(resp => resp.json())
+            .then(displayNowPlaying);
+        }
+
+        fetchNowPlaying();
+        setInterval(fetchNowPlaying, 15000);
 
 
 

@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 768px) {
   body {
-    background: url("img/BG_Mobile.jpg");
+    background: url("https://durornjsc0mci.cloudfront.net/media/uploads/froala_editor/images/1545198373BG_Mobile.jpg");
     background: no-repeat cover;
     display: inline-block;
     -webkit-background-size: cover;
@@ -44,7 +44,7 @@
     margin-top: 54px;
   }
   .container .play_now--track {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     font-size: 12px;
     padding: 55px;
   }
@@ -52,7 +52,7 @@
     left: 19%;
   }
   .container .play_list--name {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     font-size: 36px;
     line-height: 0.04em;
     margin-top: 58px;
@@ -82,7 +82,7 @@
     line-height: 0.6em;
   }
   .container .play_track--text {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     font-size: 12px;
     letter-spacing: 0.06em;
     line-height: 0.05em;
@@ -97,19 +97,19 @@
   .container .play_nav--left {
     color: #7e7e7e;
     font-size: 11px;
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
   }
   .container .play_nav--right {
     color: #b1b1b1;
     font-size: 11px;
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
   }
   .container .archive {
     margin-top: 45px;
     text-align: center;
   }
   .container .archive--text {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     color: #ffffff;
     font-size: 14px;
     text-decoration: underline;
@@ -128,14 +128,13 @@
     background-color: #ffffff;
     margin-top: 21%;
     border: 10px;
-    left: 4%;
     bottom: 43px;
+    position: relative;
+    height: 503px;
   }
   .container .playinfo_footer {
-    margin-top: 31px;
     display: -webkit-inline-box;
     padding-bottom: 54px;
-    padding-top: 58px;
     padding-left: 28%;
   }
   .container .playinfo_cloud--logo {
@@ -155,13 +154,14 @@
     text-align: center;
     color: #707070;
     font-size: 10px;
-    padding-top: 49px;
+    padding-top: 21px;
+    padding-bottom: 30px;
   }
   .container .playinfo_title {
     height: 13px;
     width: 271px;
     font-size: 13px;
-    font-family: Euclid Flex, Bold;
+    font-family: EuclidFlexBold;
     margin-top: 16%;
     color: #131313;
   }
@@ -171,14 +171,14 @@
     cursor: pointer;
   }
   .container .playinfo_left--text {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     font-size: 11px;
     color: #7e7e7e;
   }
 }
 @media screen and (min-width: 786px) {
   body {
-    background: url("img/BG_Desktop.jpg") center center fixed;
+    background: url("https://durornjsc0mci.cloudfront.net/media/uploads/froala_editor/images/1545197884BG_Desktop.jpg") center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -224,7 +224,7 @@
 }
 @media screen and (min-width: 786px) {
   .container .archive--text {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     color: #ffffff;
     font-size: 14px;
     letter-spacing: 0.12em;
@@ -271,12 +271,12 @@
   .container .play_nav--left {
     color: #7e7e7e;
     font-size: 11px;
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
   }
   .container .play_nav--right {
     color: #b1b1b1;
     font-size: 11px;
-    font-family: Euclid Flex;
+    font-family: EuclidFlex;
     font-weight: bold;
   }
 }
@@ -294,7 +294,7 @@
 }
 @media screen and (min-width: 786px) {
   .container .play_now--track {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     font-size: 15px;
     color: #ffffff;
   }
@@ -304,7 +304,7 @@
     margin-left: 51px;
   }
   .container .play_list--name {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     font-size: 36px;
     line-height: 0.4em;
     margin-top: 58px;
@@ -315,7 +315,7 @@
 }
 @media screen and (min-width: 786px) and (min-width: 1024px) and (max-width: 1200px) {
   .container .play_list--name {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     font-size: 36px;
     line-height: 0.4em;
     margin-top: 58px;
@@ -356,7 +356,7 @@
     text-align: center;
   }
   .container .play_track--text {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     font-size: 15px;
     letter-spacing: 0.06em;
     line-height: 0.07em;
@@ -448,7 +448,7 @@
     height: 13px;
     width: 271px;
     font-size: 13px;
-    font-family: Euclid Flex;
+    font-family: EuclidFlex;
     margin-top: 29px;
     color: #131313;
     font-weight: bold;
@@ -465,7 +465,7 @@
 }
 @media screen and (min-width: 786px) {
   .container .playinfo_left--text {
-    font-family: Euclid Flex bold;
+    font-family: EuclidFlexbold;
     font-size: 11px;
     color: #7e7e7e;
   }
